@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dvtl.quizappv2.PrimaryController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subject" text="ENGLISH APP" />
+      <Button mnemonicParsing="false" onAction="#managQuestions" text="QUẢN LÝ CÂU HỎI" />
+      <Button mnemonicParsing="false" onAction="#practice" text="LUYỆN TẬP" />
+      <Button mnemonicParsing="false" onAction="#exam" text="LUYỆN THI" />
+      <ComboBox fx:id="cbThemes" prefHeight="26.0" prefWidth="198.0" styleClass="button" />
+   </children>
+   <stylesheets>
+      <URL value="@whitestyle.css" />
+      <URL value="@style.css" />
+      <URL value="@darkstyle.css" />
+   </stylesheets>
+</VBox>
