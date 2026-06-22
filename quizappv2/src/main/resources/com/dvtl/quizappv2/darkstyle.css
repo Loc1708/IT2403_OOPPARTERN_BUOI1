@@ -16,9 +16,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .subject{
-    -fx-text-fill: #FFFFFF;
+    -fx-fill: whitesmoke;
     -fx-font-size: 40;
     -fx-font-weight: bold;
+    -fx-stroke: gold;          /* Màu viền */
+    -fx-stroke-width: 2;
+   
 }
 
 .button{

@@ -17,7 +17,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-font-size: 40;
     -fx-font-weight:bold;
     -fx-stroke-width:3;
-    -fx-stroke-color: gold;
+    -fx-stroke: gold;          /* Màu viền */
+    -fx-stroke-width: 2;
 }
 .button{
     -fx-background-color:darkblue;
