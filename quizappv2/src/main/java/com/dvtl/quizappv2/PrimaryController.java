@@ -1,6 +1,7 @@
 package com.dvtl.quizappv2;
 
 import com.dvtl.utils.MyAlert;
+import com.dvtl.utils.MyStageSingleton;
 import com.dvtl.utils.themes.DarkFactory;
 import com.dvtl.utils.themes.ManagerThemes;
 import static com.dvtl.utils.themes.ManagerThemes.DARK;
@@ -12,9 +13,12 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.stage.Stage;
 
 public class PrimaryController implements Initializable{
 
@@ -27,7 +31,8 @@ public class PrimaryController implements Initializable{
     }
 
     public void managQuestions(ActionEvent e){
-        MyAlert.getInstance().showAlert("coming soon");
+        MyStageSingleton.getInstance().showStage("questions");
+
     }
    public void practice(ActionEvent e){
        MyAlert.getInstance().showAlert("coming soon");
