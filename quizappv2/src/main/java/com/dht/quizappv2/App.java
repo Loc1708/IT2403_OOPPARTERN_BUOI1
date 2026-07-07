@@ -1,6 +1,6 @@
-package com.dvtl.quizappv2;
+package com.dht.quizappv2;
 
-import com.dvtl.utils.MyConnSingleton;
+import com.dht.utils.MyConnSingleton;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,7 +18,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("primary"));
         stage.setScene(scene);
         stage.show();
     }
@@ -30,7 +30,6 @@ public class App extends Application {
         MyConnSingleton.getInstance().close();
     }
 
-    
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
